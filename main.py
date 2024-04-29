@@ -64,6 +64,7 @@ class App(ctk.CTk):
         self.result_label.configure(text=result)
         self.actions_label.configure(text=f"You: {rps.get_action_name(user_action)};  Computer: {rps.get_action_name(computer_action)}")
     
+    # changes the appearance mdoe (Dark mode, Light mode or System default)
     def change_appearance_mode(self, appearance_mode):
         ctk.set_appearance_mode(appearance_mode)
 
